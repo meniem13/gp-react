@@ -13,3 +13,12 @@ const App = () => {
 };
 
 export default App;
+// document.getElementById('downloadButton').addEventListener('click', function() {
+//   var link = document.createElement('a');
+//   link.href = 'path/to/your/installer.exe'; // Update this path
+//   link.download = 'installer.exe'; // Filename for the download
+//   link.style.display = 'none';
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// });
