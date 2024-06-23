@@ -2,7 +2,6 @@ import React from "react";
 import AboutBackground from "../Assets/about-background.png";
 import AboutBackgroundImage from "../Assets/about-background-image.png";
 import PlaceholderImage1 from "../Assets/ph5.png"; // Add your placeholder images
-import PlaceholderImage2 from "../Assets/ph1.png"; // Add your placeholder images
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
 import { Carousel } from "react-responsive-carousel";
@@ -32,13 +31,6 @@ const About = () => {
               <img
                 src={PlaceholderImage1}
                 alt="Placeholder 1"
-                className="carousel-image"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src={PlaceholderImage2}
-                alt="Placeholder 2"
                 className="carousel-image"
               />
             </div>
