@@ -2,8 +2,6 @@ import React from "react";
 import PickMeals from "../Assets/ph5.png";
 import ChooseMeals from "../Assets/ph6.png";
 import DeliveryMeals from "../Assets/ph7.png";
-// import appApk from "../../public/installerV3.exe";
-import appApk from "../";
 
 const Work = () => {
   const workInfoData = [
