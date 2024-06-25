@@ -5,16 +5,6 @@ import Navbar from "./Navbar";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "path/to/your/installer.exe"; // Update this path
-    link.download = "installer.exe"; // Filename for the download
-    link.style.display = "none";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="home-container">
       <Navbar />
@@ -34,12 +24,20 @@ const Home = () => {
             all with the ease of a few taps.
           </p>
           <div className="button-container">
-            <button className="secondary-button" onClick={handleDownload}>
+            <a
+              href="https://esp32-assistant-bucket.s3.eu-central-1.amazonaws.com/Website/app-release.apk"
+              className="secondary-button"
+              download
+            >
               Download Apk <FiDownload className="button-icon" />
-            </button>
-            <button className="secondary-button" onClick={handleDownload}>
+            </a>
+            <a
+              href="https://esp32-assistant-bucket.s3.eu-central-1.amazonaws.com/Website/installerV3.exe"
+              className="secondary-button"
+              download
+            >
               Download Installer <FiDownload className="button-icon" />
-            </button>
+            </a>
           </div>
         </div>
         <div className="home-image-section">
